@@ -1,0 +1,19 @@
+.footer {
+    padding: 3px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    font-size: small;
+  }
+  
+  .footer-text {
+    margin: 0;
+  }
+  

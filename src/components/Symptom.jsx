@@ -27,16 +27,14 @@ export default function Symptom() {
         Iam Here!
       </button>
       {isChatbotOpen && (
-        <div className="chatbot-modal">
           <div className="chatbot-content">
             <button className="close-button" onClick={toggleChatbot}>Go back!</button>
             <iframe
               src="https://www.chatbase.co/chatbot-iframe/ejEps3Xmii6fTOJE1PKDy"
-              width="100%"
+              width="700px"
               height="400px"
               frameBorder="0"
             ></iframe>
-          </div>
         </div>
       )}
     </div>

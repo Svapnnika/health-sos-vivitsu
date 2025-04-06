@@ -1,0 +1,88 @@
+.registerpage {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #dddfe2;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registerpage h1 {
+    text-align: center;
+    color:#49688f;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .registerpage form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .registerpage .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .registerpage i {
+    margin-right: 10px;
+    color: #49688f;
+  }
+  
+  .registerpage label {
+    font-size: 14px;
+    color: #4b4f56;
+    width: 120px;
+    text-align: left;
+  }
+  
+  .registerpage input[type="text"],
+  .registerpage input[type="number"],
+  .registerpage input[type="password"],
+  .registerpage input[type="date"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 0;
+    font-size: 16px;
+  }
+  
+  .registerpage .gender-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .registerpage .gender-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+  }
+  
+  .registerpage input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .registerpage .submit-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .registerpage button {
+    background-color: #49688f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 0;
+  }
+  
+  .registerpage button:hover {
+    background-color: #165cbb;
+  }
+  

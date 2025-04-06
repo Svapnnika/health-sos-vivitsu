@@ -1,6 +1,6 @@
 import React from 'react';
 import './Login.css';
-
+import { Link } from 'react-router-dom';
 export default function Login() {
   return (
     <div className="login-page">
@@ -17,6 +17,9 @@ export default function Login() {
             <input type="password" id="password" name="password" required />
           </div>
           <button type="submit">Submit</button>
+          <p>
+            <Link to="../register" style={{color:'rgb(219, 196, 196)', textDecoration: 'underline', fontSize:'small'}}>New User? Register Here!</Link>
+          </p>
         </form>
       </div>
     </div>

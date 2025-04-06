@@ -1,12 +1,16 @@
-/* HomePage.css */
+/* body, html{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+} */
 .home-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     padding: 20px;
+    box-sizing: border-box;
   }
-  
   .left-side {
     display: flex;
     flex-direction: column;
@@ -31,7 +35,9 @@
   }
   
   .health-image {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
   }
   

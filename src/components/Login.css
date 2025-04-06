@@ -4,13 +4,14 @@
     align-items: center;
     height: 90vh;
     padding: 20px;
-    background-color: #242424;
-    border: 2px solid rgb(135, 125, 125);
+    /* background-color: #242424; */
+    /* border: 2px solid rgb(135, 125, 125); */
+    box-sizing: border-box;
   }
   
   .login-page h1 {
     font-size: 2em;
-    color: white;
+    color: rgb(223, 200, 200);
     margin-bottom: 20px;
   }
   
@@ -20,6 +21,7 @@
     align-items: center;
     width: 100%;
     max-width: 800px;
+    box-sizing: border-box;
   }
   
   .login-image {
@@ -29,11 +31,11 @@
   }
   
   .form {
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 40px;
     border-radius: 3px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: white;
+    color: rgb(220, 200, 200);
     flex: 1;
   }
   
@@ -50,14 +52,14 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #1a1a1a;
-    color: white;
+    color: rgb(219, 196, 196);
   }
   
   .form button {
     width: 40%;
     padding: 10px;
     background-color: #007bff;
-    color: white;
+    color: rgb(244, 230, 230);
     border: none;
     border-radius: 3px;
     cursor: pointer;
