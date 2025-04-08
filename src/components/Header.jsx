@@ -40,10 +40,10 @@ function Header() {
           {isLoggedIn ? (
             <div className='user-info'>
               <span>{user.username}</span>
-              <button onClick={handleLogout}>Logout</button>
+              <button className="header-logout-btn" onClick={handleLogout}>Logout</button>
             </div>
           ) : (
-            <button onClick={handleLogin}>Login</button>
+            <button className="header-login-btn" onClick={handleLogin}>Login</button>
           )}
         </div>
       </div>

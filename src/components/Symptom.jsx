@@ -180,11 +180,11 @@ export default function Symptom() {
         </div>
       ) : (
         <div className="chatbot-content">
-          <button className="close-button" onClick={toggleChatbot}>Close</button>
+          <button className="close-button" onClick={toggleChatbot}>Go Back!</button>
           <iframe
             src="https://www.chatbase.co/chatbot-iframe/ejEps3Xmii6fTOJE1PKDy"
             width="450px"
-            height="600px"
+            height="400px"
             frameBorder="0"
           ></iframe>
         </div>

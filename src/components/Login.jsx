@@ -30,7 +30,7 @@ export default function Login() {
             value={password} onChange={(e) => setPassword(e.target.value)} 
             required />
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" className="login-submit-btn">Submit</button>
           <p>
             <Link to="../register" style={{color:'rgb(219, 196, 196)', textDecoration: 'underline', fontSize:'small'}}>
             New User? Register Here!</Link>

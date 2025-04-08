@@ -111,7 +111,18 @@ export default function Register() {
       {error && <div className="error-message">{error}</div>}
       {success && <div className="success-message">Registration successful! Redirecting to login...</div>}
       
-      <form onSubmit={handleRegister}>
+      {/* <div className="register-button-container">
+        <button 
+          type="button" 
+          className="register-submit-btn"
+          onClick={() => document.getElementById('registerForm').scrollIntoView({ behavior: 'smooth' })}
+        >
+          Register Now
+        </button>
+      </div> */}
+      
+      <form id="registerForm" onSubmit={handleRegister}>
+        
         <div className="form-group">
           <i className="fas fa-user"></i>
           <label htmlFor="username">Username: </label>
@@ -216,12 +227,20 @@ export default function Register() {
           />
         </div>
 
-        <button 
-          type="submit" 
-          disabled={loading}
-        >
-          {loading ? 'Registering...' : 'Register'}
-        </button>
+        <div className="register-button-container">
+          <button 
+            type="submit" 
+            className={`register-submit-btn ${loading ? 'loading' : ''}`}
+            disabled={loading}
+          >
+            {loading ? (
+              <>
+                <span className="loading-spinner"></span>
+                <span>Registering...</span>
+              </>
+            ) : 'Register'}
+          </button>
+        </div>
       </form>
     </div>
   );

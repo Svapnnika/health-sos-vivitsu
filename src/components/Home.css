@@ -22,7 +22,7 @@
 }
 .login-button {
   position: absolute;
-  top: calc(29% + 6rem);
+  top: calc(25% + 8.7rem);
   right: 284px;
   margin-top: 37px;
   padding: 10px 25px;
@@ -37,6 +37,8 @@
   letter-spacing: 1px;
   transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-out 0.9s forwards;
+  opacity: 0;
 }
 
 .login-button:hover {
@@ -56,11 +58,46 @@
   height: 100%;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInScale 1s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .overlay-heading {
   position: absolute;
-  top: 29%;
+  top: 25%;
   right: 74px;
   transform: translateY(-50%);
   color: white;
@@ -72,11 +109,13 @@
   font-weight: bold;
   letter-spacing: 3px;
   max-width: 50%;
+  animation: fadeInRight 1s ease-out 0.3s forwards;
+  opacity: 0;
 }
 
 .overlay-text {
   position: absolute;
-  top: calc(29% + 2.5rem);
+  top: calc(25% + 4.8rem);
   right: 30px;
   color: white;
   font-size: 1.2rem;
@@ -88,4 +127,6 @@
   font-weight: 300;
   letter-spacing: 0.5px;
   line-height: 1.4;
+  animation: fadeInRight 1s ease-out 0.6s forwards;
+  opacity: 0;
 }
