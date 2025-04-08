@@ -10,9 +10,6 @@ export default function Home() {
   return (
     <div>
       <div className="home-page">
-      <div className="left-side">
-        <button className="login-button" onClick={handleSymptom}>Symptom Checker</button>
-      </div>
       <div className="right-side">
         <img src="src/assets/img.webp" alt="Health" className="health-image" />
       </div>

@@ -4,12 +4,17 @@ import { LuBotMessageSquare } from "react-icons/lu";
 import { BiUserCheck } from "react-icons/bi";
 import { IoHomeOutline } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
-
-
+import { MdOutlineLocalHospital } from "react-icons/md";
+import { useAuth } from './Auth';
 function Header() {
   const navigate = useNavigate();
+  const { isLoggedIn, user, logout } = useAuth();
   const handleLogin = () => {
     navigate('/login');
+  };
+  const handleLogout = () => {
+    logout(); 
+    navigate('/');
   };
   return (
     <div className="header">
@@ -18,9 +23,18 @@ function Header() {
         <div className='line'>
         <a href="/"><IoHomeOutline size={24}/></a>
         <a href="/symptom"><LuBotMessageSquare size={24} /></a>
+        <a href="/symptom"><MdOutlineLocalHospital size={24}/></a>
         </div>
         <div className='line'>
-        <a><BiUserCheck size={24}/></a> <button onClick={handleLogin}>Login</button>
+        <a><BiUserCheck size={24}/></a> 
+        {isLoggedIn ? (
+          <div className='user-info'>
+            <span>{user.username}</span>
+            <button onClick={handleLogout}>Logout</button>
+          </div>
+        ) : (
+          <button onClick={handleLogin}>Login</button>
+        )}
         </div>
       </div>
     </div>

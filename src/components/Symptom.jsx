@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Symptom.css'; 
-import { IoLocationSharp } from "react-icons/io5";
 export default function Symptom() {
   const [isChatbotOpen, setIsChatbotOpen] = useState(false);
 
@@ -21,20 +20,25 @@ export default function Symptom() {
   return (
     <div className="symptom-page">
       <h1>Symptom Checker</h1>
-      <p>Chat with the bot to know more about your symptoms...</p>
-      <p><IoLocationSharp size={20}/>Location</p>
-      <button className="chatbot-button" onClick={toggleChatbot}>
-        Iam Here!
-      </button>
-      {isChatbotOpen && (
-          <div className="chatbot-content">
-            <button className="close-button" onClick={toggleChatbot}>Go back!</button>
-            <iframe
-              src="https://www.chatbase.co/chatbot-iframe/ejEps3Xmii6fTOJE1PKDy"
-              width="700px"
-              height="400px"
-              frameBorder="0"
-            ></iframe>
+      {!isChatbotOpen ? (
+        <div className="chatbot-prompt">
+          <img 
+            src="/src/assets/chatbot.gif" 
+            alt="Chatbot Assistant" 
+            onClick={toggleChatbot}
+            className="chatbot-gif" 
+            style={{ cursor: 'pointer' }}
+          />
+        </div>
+      ) : (
+        <div className='chatbot-content'>
+          <button className='close-button' onClick={toggleChatbot}>Go Back!</button>
+          <iframe
+            src="https://www.chatbase.co/chatbot-iframe/ejEps3Xmii6fTOJE1PKDy"
+            width="700px"
+            height="400px"
+            frameBorder="0"
+          ></iframe>
         </div>
       )}
     </div>

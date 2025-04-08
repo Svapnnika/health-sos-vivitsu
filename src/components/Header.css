@@ -41,3 +41,12 @@
     align-items: center;
     gap: 4px;
   }
+  .user-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .user-info span{
+    font-size: 14px;
+    color: #fff;
+  }

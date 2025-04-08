@@ -17,23 +17,43 @@ p {
   color: #c0a9a9;
 }
 
-.chatbot-button {
+.chatbot-prompt {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #d0bdbd;
-  color: #333;
-  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.chatbot-gif {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 14px;
-  cursor: pointer;
+  object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.chatbot-button {
+  background-color: #d0bdbd;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.chatbot-button:hover {
+  background-color: #c0a9a9;
+  transform: scale(1.05);
+}
+
 .close-button {
-  background-color: #625c5c;
+  background-color: #e64848;
   color: white;
   padding: 5px 8px;
   cursor: pointer;
@@ -41,5 +61,15 @@ p {
   border-radius: 0;
 }
 .close-button:hover{
-  background-color: rgb(173, 151, 151);
+  background-color: rgb(98, 48, 213);
+}
+
+.chatbot-content {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2d2828;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  z-index: 1000;
 }

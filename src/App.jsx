@@ -5,11 +5,13 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Symptom from './components/Symptom';
 import Register from './components/Register';
+import { AuthProvider } from './components/Auth';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  return (
+  return ( 
+  <AuthProvider>  
     <Router>
       <Header />
       <Routes>
@@ -20,6 +22,7 @@ function App() {
       </Routes>
       <Footer />
     </Router>
+  </AuthProvider>  
   );
 }
 
