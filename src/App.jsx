@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Symptom from './components/Symptom';
 import Register from './components/Register';
+import Location from './components/Location';
 import { AuthProvider } from './components/Auth';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/symptom" element={<Symptom />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/location" element={<Location />} />
       </Routes>
       <Footer />
     </Router>

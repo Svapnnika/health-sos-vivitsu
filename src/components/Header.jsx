@@ -18,23 +18,33 @@ function Header() {
   };
   return (
     <div className="header">
-      <div style={{ fontWeight:"bolder", fontSize:30}}>Health SOS</div>
-      <div className="header-link">
-        <div className='line'>
-        <a href="/"><IoHomeOutline size={24}/></a>
-        <a href="/symptom"><LuBotMessageSquare size={24} /></a>
-        <a href="/symptom"><MdOutlineLocalHospital size={24}/></a>
-        </div>
-        <div className='line'>
-        <a><BiUserCheck size={24}/></a> 
-        {isLoggedIn ? (
-          <div className='user-info'>
-            <span>{user.username}</span>
-            <button onClick={handleLogout}>Logout</button>
+      <div className="logo">
+        <a href="/">
+          <div className="logo-container">
+            <img src="./src/assets/hsptl logo.png"  className="logo-image" />
           </div>
-        ) : (
-          <button onClick={handleLogin}>Login</button>
-        )}
+        </a>
+      </div>
+      <div className="header-links">
+        <div className='nav-link'>
+          <a href="/"><IoHomeOutline size={24}/>Home</a>
+        </div>
+        <div className='nav-link'>
+          <a href="/symptom"><LuBotMessageSquare size={24} />Bot</a>
+        </div>
+        <div className='nav-link'>
+          <a href="/location"><MdOutlineLocalHospital size={24}/>Location</a>
+        </div>
+        <div className='user-section'>
+          <a><BiUserCheck size={24}/></a> 
+          {isLoggedIn ? (
+            <div className='user-info'>
+              <span>{user.username}</span>
+              <button onClick={handleLogout}>Logout</button>
+            </div>
+          ) : (
+            <button onClick={handleLogin}>Login</button>
+          )}
         </div>
       </div>
     </div>
