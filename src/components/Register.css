@@ -200,7 +200,7 @@
   .register-submit-btn:hover {
     background: linear-gradient(90deg, #aaa2a3cd, #130102) !important;
     transform: translateY(-3px) !important;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 5px 15px #0000004d !important;
   }
   
   .register-submit-btn:active {

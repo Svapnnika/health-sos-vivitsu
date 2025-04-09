@@ -8,7 +8,6 @@ function Location() {
   const [locationError, setLocationError] = useState(null);
 
   useEffect(() => {
-    // Get user's current location
     navigator.geolocation.getCurrentPosition(
       position => {
         setLat(position.coords.latitude);

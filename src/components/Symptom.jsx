@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Symptom.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
+import { faMessage, faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 
 const symptomsList = [
   { id: "s_21", label: "Abdominal pain" },
@@ -160,10 +160,11 @@ export default function Symptom() {
         <div className="sos-container">
           <button className="sos-button" onClick={() => window.location.href='tel:108'}>
             <FontAwesomeIcon icon={faExclamationTriangle} className="sos-icon" />
-            <FontAwesomeIcon icon={faPhone} className="phone-icon" />
-            EMERGENCY SOS
+            <FontAwesomeIcon icon={faMessage} className="phone-icon" />
+            SEND SOS
           </button>
-          <p className="sos-info">Call emergency services immediately if you're experiencing severe symptoms</p>
+          <p className="sos-info">Chat with the ChatBot for instant remedies and medicines.</p>
+          <p className='sos-info'>Use the Locator to find nearby hospitals and pharmacies.</p>
         </div>
       </div>
       
