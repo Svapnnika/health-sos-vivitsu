@@ -22,7 +22,7 @@ export default function Home() {
             <button className="login-button" onClick={() => navigate('/login')}>Login</button>
           )}
         </div>
-      </div>
+      </div> 
     </div>
   );
 }

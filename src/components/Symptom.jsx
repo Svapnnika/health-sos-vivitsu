@@ -14,7 +14,36 @@ const symptomsList = [
   { id: "s_16", label: "Fatigue" },
   { id: "s_140", label: "Fever" },
   { id: "s_23", label: "Headache" },
-  // Add more as needed
+  { id: "s_45", label: "Nausea" },
+  { id: "s_67", label: "Sore throat" },
+  { id: "s_89", label: "Shortness of breath" },
+  { id: "s_112", label: "Joint pain" },
+  { id: "s_134", label: "Muscle aches" },
+  { id: "s_156", label: "Rash" },
+  { id: "s_178", label: "Vomiting" },
+  { id: "s_200", label: "Loss of appetite" },
+  { id: "s_222", label: "Swelling" },
+  { id: "s_244", label: "Weight loss" },
+  { id: "s_266", label: "Blurred vision" },
+  { id: "s_288", label: "Chills" },
+  { id: "s_310", label: "Constipation" },
+  { id: "s_332", label: "Dry mouth" },
+  { id: "s_354", label: "Earache" },
+  { id: "s_376", label: "Excessive sweating" },
+  { id: "s_398", label: "Frequent urination" },
+  { id: "s_420", label: "Heart palpitations" },
+  { id: "s_442", label: "Insomnia" },
+  { id: "s_464", label: "Itching" },
+  { id: "s_486", label: "Loss of balance" },
+  { id: "s_508", label: "Memory loss" },
+  { id: "s_530", label: "Nasal congestion" },
+  { id: "s_552", label: "Numbness" },
+  { id: "s_574", label: "Persistent cough" },
+  { id: "s_596", label: "Runny nose" },
+  { id: "s_618", label: "Skin redness" },
+  { id: "s_640", label: "Sneezing" },
+  { id: "s_662", label: "Sore muscles" },
+  { id: "s_684", label: "Tingling sensation" }
 ];
 
 export default function Symptom() {
@@ -167,8 +196,7 @@ export default function Symptom() {
           <p className='sos-info'>Use the Locator to find nearby hospitals and pharmacies.</p>
         </div>
       </div>
-      
-      {/* Chatbot in bottom right corner */}
+    
       {!isChatbotOpen ? (
         <div className="chatbot-prompt">
           <img 

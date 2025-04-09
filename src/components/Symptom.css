@@ -15,7 +15,7 @@
 }
 
 .symptom-form {
-  background-color: rgb(88, 26, 90);
+  background-color: rgb(120, 111, 120);
   border-radius: 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -173,7 +173,6 @@
   line-height: 1.5;
 }
 
-/* SOS Button Styles */
 .sos-container {
   margin-top: 40px;
   padding-top: 20px;
@@ -183,9 +182,9 @@
 
 .sos-button {
   background-color: #c12f2a;
-  color: white;
+  color: rgb(245, 238, 238);
   border: none;
-  border-radius: 4px;
+  border-radius: 1px;
   padding: 15px 30px;
   font-size: 18px;
   font-weight: bold;
@@ -220,8 +219,9 @@
 
 .sos-info {
   margin-top: 15px;
-  color: #777;
+  color: #150a0a;
   font-size: 14px;
+  font-weight: bold;
 }
 
 @keyframes pulse {
@@ -243,8 +243,6 @@
     gap: 10px;
   }
 }
-
-/* Chatbot Styles */
 .chatbot-prompt {
   position: fixed;
   bottom: 20px;
@@ -257,8 +255,8 @@
 }
 
 .chatbot-gif {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
