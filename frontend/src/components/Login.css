@@ -11,7 +11,7 @@
   
   .login-page h1 {
     font-size: 2em;
-    color: rgb(223, 200, 200);
+    color: rgb(15, 1, 1);
     margin-bottom: 20px;
   }
   
@@ -26,7 +26,7 @@
   
   .login-image {
     max-width: 50%;
-    max-height: 100%;
+    height: 340px;
     margin-right: 20px;
     animation: fadeInLeft 1s ease-out forwards;
     opacity: 0;
@@ -44,11 +44,11 @@
   }
   
   .form {
-    background-color: rgba(21, 17, 17, 0.1);
+    background-color: rgba(144, 142, 215, 0.1);
     padding: 40px;
     border-radius: 3px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    color: rgb(220, 200, 200);
+    color: rgb(37, 5, 134);
     flex: 1;
     animation: fadeInRight 1s ease-out forwards;
     opacity: 0;
@@ -78,7 +78,7 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #1a1a1a;
-    color: rgb(219, 196, 196);
+    color: rgb(146, 138, 144);
   }
   
   .form button {

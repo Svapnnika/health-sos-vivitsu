@@ -17,7 +17,7 @@ export default function Login() {
     <div className="login-page">
       <h1>Login Page</h1>
       <div className="image-and-form">
-        <img src="src/assets/login.webp" alt="Login" className="login-image" />
+        <img src="src/assets/login.jpg" alt="Login" className="login-image" />
         <form className='form' onSubmit={handleSubmit}>
           <div>
             <label htmlFor="username">Username:</label>
@@ -32,7 +32,7 @@ export default function Login() {
           </div>
           <button type="submit" className="login-submit-btn">Submit</button>
           <p>
-            <Link to="../register" style={{color:'rgb(219, 196, 196)', textDecoration: 'underline', fontSize:'small'}}>
+            <Link to="../register" style={{color:'rgb(53, 85, 190)', textDecoration: 'underline', fontSize:'small'}}>
             New User? Register Here!</Link>
           </p>
         </form>
