@@ -189,7 +189,7 @@ export default function Symptom() {
         <div className="sos-container">
           <button className="sos-button" onClick={() => window.location.href='tel:108'}>
             <FontAwesomeIcon icon={faExclamationTriangle} className="sos-icon" />
-            <FontAwesomeIcon icon={faMessage} className="phone-icon" />
+            {/* <FontAwesomeIcon icon={faMessage} className="phone-icon" /> */}
             SEND SOS
           </button>
           <p className="sos-info">Chat with the ChatBot for instant remedies and medicines.</p>
