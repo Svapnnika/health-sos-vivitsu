@@ -1,16 +1,14 @@
 import React from 'react';
 import './Home.css';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import { useAuth } from './Auth';
 
 export default function Home() {
   const navigate = useNavigate();
   const { isLoggedIn } = useAuth();
-
   const handleSymptom = () => {
     navigate('/symptom');
   };
-
   return (
     <div className="home-page-wrapper">
       <div className="home-page">

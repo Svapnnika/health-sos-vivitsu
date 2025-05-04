@@ -35,6 +35,7 @@ function Header() {
         <a href="/">
           <div className="logo-container">
             <img src="./src/assets/hsptl logo.png" className="logo-image" />
+            <span className="logo-heading">Health SOS</span>
           </div>
         </a>
       </div>

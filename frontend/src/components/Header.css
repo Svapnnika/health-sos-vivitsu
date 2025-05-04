@@ -27,14 +27,21 @@
   overflow: hidden;
   background-color: #484646;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
 }
 
 .logo-image {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  margin-right: 10px;
 }
-
+.logo-heading {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: whitesmoke;
+}
 .logo-text {
   margin-left: 12px;
   font-size: 22px;
@@ -42,7 +49,9 @@
   color: #ffffff;
   letter-spacing: 0.5px;
 }
-
+.logo-text h1{
+  color: white;
+}
 .header-links {
   display: flex;
   align-items: center;
