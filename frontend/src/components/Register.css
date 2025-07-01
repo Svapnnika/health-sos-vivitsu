@@ -1,0 +1,305 @@
+.registerpage {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #dddfe2;
+    border-radius: 0;
+    background-color: rgba(91, 161, 191, 0.8);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .registerpage h1 {
+    text-align: center;
+    color:#090a0c;
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fadeInDown 0.6s ease-out 0.1s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .registerpage form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .registerpage .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    animation: slideIn 0.5s ease-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Staggered animation for form groups */
+  .registerpage .form-group:nth-child(1) { animation-delay: 0.3s; }
+  .registerpage .form-group:nth-child(2) { animation-delay: 0.4s; }
+  .registerpage .form-group:nth-child(3) { animation-delay: 0.5s; }
+  .registerpage .form-group:nth-child(4) { animation-delay: 0.6s; }
+  .registerpage .form-group:nth-child(5) { animation-delay: 0.7s; }
+  .registerpage .form-group:nth-child(6) { animation-delay: 0.8s; }
+  .registerpage .form-group:nth-child(7) { animation-delay: 0.9s; }
+  .registerpage .form-group:nth-child(8) { animation-delay: 1.0s; }
+  
+  .registerpage i {
+    margin-right: 10px;
+    color: #06090d;
+  }
+  
+  .registerpage label {
+    font-size: 14px;
+    color: #040912;
+    width: 120px;
+    text-align: left;
+  }
+  
+  .registerpage input[type="text"],
+  .registerpage input[type="number"],
+  .registerpage input[type="password"],
+  .registerpage input[type="date"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 0;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .registerpage input[type="text"]:focus,
+  .registerpage input[type="number"]:focus,
+  .registerpage input[type="password"]:focus,
+  .registerpage input[type="date"]:focus {
+    border-color: #49688f;
+    box-shadow: 0 0 0 2px rgba(73, 104, 143, 0.25);
+    outline: none;
+    background-color: white;
+  }
+  
+  .registerpage .gender-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .registerpage .gender-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+  }
+  
+  .registerpage input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .registerpage .submit-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .register-button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  
+  /* Style for the top register button */
+  .registerpage > .register-button-container {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .registerpage button {
+    background-color: #49688f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .registerpage button:hover {
+    background-color: #165cbb;
+  }
+  
+  .register-submit-btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease !important;
+    background: linear-gradient(90deg, #708ea6, #064e70);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    animation: fadeInUp 0.8s ease-out 0s forwards;
+    opacity: 0;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  /* Special styling for the top register button
+  .registerpage > .register-button-container .register-submit-btn {
+    animation: pulse 2s infinite !important;
+    background: linear-gradient(90deg, #2e8b57, #1a5e3a) !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3) !important;
+  }
+   */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .register-submit-btn:hover {
+    background: linear-gradient(90deg, #aaa2a3cd, #130102) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 5px 15px #0000004d !important;
+  }
+  
+  .register-submit-btn:active {
+    transform: translateY(-1px) !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .register-submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: 0.6s;
+  }
+  
+  .register-submit-btn:hover::before {
+    left: 100%;
+  }
+  
+  .register-submit-btn:disabled {
+    background: linear-gradient(90deg, #7fb99a, #5a8c75) !important;
+    cursor: not-allowed !important;
+    transform: none !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .register-submit-btn:disabled::before {
+    display: none;
+  }
+  
+  .register-submit-btn.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .loading-spinner {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  .registerpage button:disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
+  }
+
+  .error-message {
+    background-color: #ffebee;
+    color: #d32f2f;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    text-align: center;
+    border-left: 4px solid #d32f2f;
+    animation: shake 0.5s ease-in-out;
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+  }
+
+  .success-message {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    text-align: center;
+    border-left: 4px solid #2e7d32;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { 
+      box-shadow: 0 0 0 0 rgba(46, 125, 50, 0.4);
+      transform: scale(1);
+    }
+    50% { 
+      box-shadow: 0 0 0 10px rgba(46, 125, 50, 0);
+      transform: scale(1.05);
+    }
+    100% { 
+      box-shadow: 0 0 0 0 rgba(46, 125, 50, 0);
+      transform: scale(1);
+    }
+  }
+  

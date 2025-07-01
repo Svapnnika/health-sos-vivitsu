@@ -1,0 +1,80 @@
+.location-page {
+  padding-top: 80px;
+  min-height: calc(100vh - 70px);
+  background-color: #bfa1d6;
+}
+
+.location-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.location-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.location-error {
+  background-color: #b0a1a1;
+  border: 1px solid #ffcaca;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+.location-error p {
+  color: #d32f2f;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.retry-button {
+  background-color: #53535d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.retry-button:hover {
+  background-color: #3a3a42;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 40px;
+  margin: 40px auto;
+  max-width: 600px;
+  background-color: rgb(133, 121, 121);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loading-container p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #666;
+}
+
+.loading-spinner {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(83, 83, 93, 0.3);
+  border-radius: 50%;
+  border-top-color: #53535d;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
