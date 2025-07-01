@@ -1,25 +1,48 @@
-import React from 'react';
+// import React from 'react';
 import './Footer.css';
 
-function Footer() {
+const footerLinks = [
+  {
+    title: 'Learn',
+    links: ['Health Assistance', 'ChatBot', 'Pharmacy Location', 'Alert Messages']
+  },
+  {
+    title: 'Community',
+    links: ['User Groups', 'Community Forums', 'Staff', 'Slack Channel']
+  },
+  {
+    title: 'About',
+    links: ['Company', 'Careers', 'Press', 'Contact']
+  }
+];
+
+export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-content">
-        <p className="footer-text">© 2025 Health Assistant. All rights reserved.</p>
-        <div className="footer-links">
-          <a href="https://www.example.com/privacy" className="footer-link" target="_blank" rel="noopener noreferrer">
-            Privacy Policy
-          </a>
-          <a href="https://www.example.com/terms" className="footer-link" target="_blank" rel="noopener noreferrer">
-            Terms of Service
-          </a>
-          <a href="https://www.example.com/contact" className="footer-link" target="_blank" rel="noopener noreferrer">
-            Contact Us
-          </a>
+      <div className="footer-top">
+        {footerLinks.map(section => (
+          <div key={section.title} className="footer-section">
+            <h4>{section.title}</h4>
+            <ul>
+              {section.links.map(link => (
+                <li key={link}>
+                  <a href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}>
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+      <div className="footer-bottom">
+        <span>© {new Date().getFullYear()} Your Company. All rights reserved.</span>
+        <div className="footer-bottom-links">
+          <a href="#terms">Terms</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#cookies">Cookies</a>
         </div>
       </div>
     </footer>
   );
 }
-
-export default Footer;
